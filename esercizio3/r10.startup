@@ -1,7 +1,6 @@
-ip addr add 10.42.130.170/30 dev eth0
-ip addr add 10.42.96.1/20 dev eth1
-ip addr add 10.42.130.173/30 dev eth2
+ip addr add 10.42.96.1/20 dev eth0
+ip addr add 10.42.130.173/30 dev eth1
 
 #Routing
-ip route add default via 10.42.130.169
+ip route add default via 10.42.130.174
 
