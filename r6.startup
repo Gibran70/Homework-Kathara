@@ -3,10 +3,18 @@ ip addr add 10.42.130.1/25 dev eth1
 ip addr add 10.42.130.157/30 dev eth2
 ip addr add 10.42.130.146/30 dev eth3
 
+
 #Routing
-ip route add 10.42.112.0/21 via 10.42.130.158 #Sardegna
-ip route add 10.42.96.0/20 via 10.42.130.158 #Sicilia
-ip route add 10.42.32.0/19 via 10.42.130.158 #Calabria
-ip route add 10.42.64.0/19 via 10.42.130.158 #Puglia
-ip route add 10.42.112.0/21 via 10.42.130.158 #
+
+#Anello Sud (Senso Antiorario)
+#CALABRIA (Verso R11)
+ip route add 10.42.32.0/19 via 10.42.130.158
+
+#Supernet di PUGLIA, SICILIA, SARDEGNA
+ip route add 10.42.64.0/18 via 10.42.130.158
+
+#Esclusione delle regioni del nord (Marche e Toscana) dal Supernetting
+#Abbiamo utilizzato il principio del Longest Match Prefix per scrivere meno rotte specifiche.
+ip route add 10.42.120.0/21 via 10.42.130.145
+
 ip route add default via 10.42.130.145
