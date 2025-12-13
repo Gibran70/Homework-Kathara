@@ -1,0 +1,5 @@
+ip addr add 10.42.130.142/30 dev eth1
+ip addr add 10.42.130.149/30 dev eth0
+
+#Routing
+ip route add default via 10.42.130.150 #Verso R7

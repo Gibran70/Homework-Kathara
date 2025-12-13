@@ -1,0 +1,7 @@
+ip addr add 10.42.130.150/30 dev eth3
+ip addr add 10.42.130.161/30 dev eth0
+ip addr add 10.42.130.154/30 dev eth1
+ip addr add 10.42.120.1/22 dev eth2
+
+#Routing
+ip route add default via 10.42.130.153 #Senso Antiorario

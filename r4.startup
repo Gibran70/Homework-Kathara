@@ -1,0 +1,6 @@
+ip addr add 10.42.130.138/30 dev eth2
+ip addr add 10.42.124.1/22 dev eth0
+ip addr add 10.42.130.145/30 dev eth1
+
+#Routing
+ip route add default via 10.42.130.137 #Senso Orario
