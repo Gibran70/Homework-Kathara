@@ -1,0 +1,8 @@
+ip addr add 10.42.130.133/30 dev eth0
+ip addr add 10.42.130.129/30 dev eth1
+
+#Routing
+ip route add 10.42.0.0/16 via 10.42.130.134 #Senso Orario verso R3
+
+#NAT
+iptables -t nat -A POSTROUTING -s 10.42.0.0/16 -o eth2 -j MASQUERADE

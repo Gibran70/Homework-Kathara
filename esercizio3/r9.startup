@@ -1,0 +1,6 @@
+ip addr add 10.42.64.1/19 dev eth0
+ip addr add 10.42.130.165/30 dev eth1
+ip addr add 10.42.130.162/30 dev eth2
+
+#Routing
+ip route add default via 10.42.130.161 #Antiorario
