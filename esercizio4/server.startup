@@ -1,0 +1,6 @@
+ip addr add 10.42.130.182/30 dev eth0
+
+#Routing
+
+#Verso R1 Diretto
+ip route add default via 10.42.130.181
