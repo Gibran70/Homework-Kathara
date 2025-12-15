@@ -21,7 +21,7 @@ ip route add 10.42.96.0/20 via 10.42.130.158
 
 #Supernet P2P sud
 ip route add 10.42.130.160/27 via 10.42.130.178
-ip route add 10.42.130.156/30 via 10.42.130.158
+#ip route add 10.42.130.156/30 via 10.42.130.158
 ip route add 10.42.130.172/30 via 10.42.130.158 
 
 
