@@ -3,4 +3,8 @@ ip addr add 10.42.32.1/19 dev eth1
 ip addr add 10.42.130.169/30 dev eth2
 
 #Routing
+
+#Server Calabria (Verso R1)
+ip route add 10.42.48.1/32 via 10.42.130.165
+
 ip route add default via 10.42.130.165 #Antiorario

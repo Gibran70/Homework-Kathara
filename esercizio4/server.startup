@@ -1,4 +1,5 @@
 ip addr add 10.42.130.182/30 dev eth0
+ip addr add 10.42.48.1/32 dev eth1
 
 #Routing
 
